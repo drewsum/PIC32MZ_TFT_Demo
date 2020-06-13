@@ -572,6 +572,7 @@ AR Path="/5C1D5C9E/5EE5C143" Ref="TP?"  Part="1"
 AR Path="/5CB6F1ED/5EE5C143" Ref="TP?"  Part="1" 
 AR Path="/5E6978AF/5EE5C143" Ref="TP?"  Part="1" 
 AR Path="/5EE2D3F3/5EE5C143" Ref="TP?"  Part="1" 
+AR Path="/5EE2D441/5EE5C143" Ref="TP?"  Part="1" 
 F 0 "TP?" H 2480 4410 50  0000 C CNN
 F 1 "TP" H 2480 4410 50  0001 C CNN
 F 2 "Custom Footprints Library:Test_Point" H 2480 4260 60  0001 C CNN
