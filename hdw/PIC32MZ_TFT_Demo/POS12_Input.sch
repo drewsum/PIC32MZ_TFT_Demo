@@ -1,13 +1,14 @@
 EESchema Schematic File Version 4
+LIBS:PIC32MZ_TFT_Demo-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 2 11
-Title "QI Charger"
-Date "2019-01-03"
+Sheet 2 13
+Title ""
+Date "2020-07-04"
 Rev "A"
-Comp ""
+Comp "Drew Maatman"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -111,7 +112,7 @@ P 1230 3170
 AR Path="/5C1D5CD8/5C358180" Ref="TP?"  Part="1" 
 AR Path="/5C1D5C9E/5C358180" Ref="TP?"  Part="1" 
 AR Path="/5CB6F1ED/5C358180" Ref="TP?"  Part="1" 
-AR Path="/5E6978AF/5C358180" Ref="TP201"  Part="1" 
+AR Path="/5E6978AF/5C358180" Ref="TP?"  Part="1" 
 AR Path="/5EE2D3F3/5C358180" Ref="TP201"  Part="1" 
 F 0 "TP201" H 1230 3320 50  0000 C CNN
 F 1 "TP" H 1230 3320 50  0001 C CNN
@@ -138,7 +139,7 @@ P 7810 2160
 AR Path="/5C1D5CD8/5C361228" Ref="TP?"  Part="1" 
 AR Path="/5C1D5C9E/5C361228" Ref="TP?"  Part="1" 
 AR Path="/5CB6F1ED/5C361228" Ref="TP?"  Part="1" 
-AR Path="/5E6978AF/5C361228" Ref="TP202"  Part="1" 
+AR Path="/5E6978AF/5C361228" Ref="TP?"  Part="1" 
 AR Path="/5EE2D3F3/5C361228" Ref="TP202"  Part="1" 
 F 0 "TP202" H 7810 2310 50  0000 C CNN
 F 1 "TP" H 7810 2310 50  0001 C CNN
@@ -149,28 +150,6 @@ F 3 "" H 7810 2160 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	7810 2160 7810 2230
-$Comp
-L power:PWR_FLAG #FLG0201
-U 1 1 5E47B2AF
-P 1620 3170
-F 0 "#FLG0201" H 1620 3245 50  0001 C CNN
-F 1 "PWR_FLAG" H 1620 3320 50  0000 C CNN
-F 2 "" H 1620 3170 50  0001 C CNN
-F 3 "~" H 1620 3170 50  0001 C CNN
-	1    1620 3170
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0203
-U 1 1 5E47B56C
-P 1620 3170
-F 0 "#PWR0203" H 1620 2920 50  0001 C CNN
-F 1 "GND" H 1620 3020 50  0000 C CNN
-F 2 "" H 1620 3170 50  0001 C CNN
-F 3 "" H 1620 3170 50  0001 C CNN
-	1    1620 3170
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1450 2230 7810 2230
 Wire Wire Line

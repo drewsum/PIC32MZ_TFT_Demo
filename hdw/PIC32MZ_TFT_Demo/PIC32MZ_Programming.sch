@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
+LIBS:PIC32MZ_TFT_Demo-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 4 11
-Title "VFD Clock"
-Date "2019-04-11"
+Sheet 4 13
+Title ""
+Date "2020-07-04"
 Rev "A"
 Comp "Drew Maatman"
 Comment1 ""
@@ -73,7 +74,7 @@ AR Path="/5BAAE1DC/5BC152E5" Ref="R?"  Part="1"
 AR Path="/5BAAE16C/5BC152E5" Ref="R?"  Part="1" 
 AR Path="/5C1D5CB6/5BC152E5" Ref="R?"  Part="1" 
 AR Path="/5CB0BC26/5BC152E5" Ref="R?"  Part="1" 
-AR Path="/5E697920/5BC152E5" Ref="R404"  Part="1" 
+AR Path="/5E697920/5BC152E5" Ref="R?"  Part="1" 
 AR Path="/5EE2D42C/5BC152E5" Ref="R404"  Part="1" 
 F 0 "R404" H 7490 2020 50  0000 R CNN
 F 1 "10k" V 7550 2020 50  0000 C CNN
@@ -198,7 +199,7 @@ AR Path="/5BAAE16C/5BE087D6" Ref="R?"  Part="1"
 AR Path="/5BB844FD/5BE087D6" Ref="R?"  Part="1" 
 AR Path="/5C1D5CB6/5BE087D6" Ref="R?"  Part="1" 
 AR Path="/5CB0BC26/5BE087D6" Ref="R?"  Part="1" 
-AR Path="/5E697920/5BE087D6" Ref="R402"  Part="1" 
+AR Path="/5E697920/5BE087D6" Ref="R?"  Part="1" 
 AR Path="/5EE2D42C/5BE087D6" Ref="R402"  Part="1" 
 F 0 "R402" H 5860 3000 50  0000 R CNN
 F 1 "10k" V 5920 3000 50  0000 C CNN
@@ -298,19 +299,165 @@ F 4 "BSS214NWH6327XTSA1CT-ND" H 6410 2770 50  0001 C CNN "Digi-Key PN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x08 J?
+L Connector_Generic:Conn_01x08 J401
 U 1 1 5EE533D9
 P 1070 2090
-F 0 "J?" H 940 2630 50  0000 C CNN
+F 0 "J401" H 940 2630 50  0000 C CNN
 F 1 "PICKIT4" H 940 2530 50  0000 C CNN
-F 2 "" H 1070 2090 50  0001 C CNN
+F 2 "Custom Footprints Library:PICKIT4_Header" H 1070 2090 50  0001 C CNN
 F 3 "~" H 1070 2090 50  0001 C CNN
 	1    1070 2090
 	-1   0    0    -1  
 $EndComp
 NoConn ~ 1270 2290
-Text Notes 1020 3730 0    50   ~ 0
-Component Setting\nOscillator: OSC bits set properly\nPower: Supplied by target\nWDT: Disabled (device dependent)\nCode-Protect: Disabled\nTable Read Protect: Disabled\nLVP: Disabled\nBOD: Vdd > BOD Vdd min.\nJTAG: Disabled\nAVdd and AVss Must be connected\nPGCx/PGDx Proper channel selected, if applicable\nProgramming Vdd voltage levels meet programming spec
 NoConn ~ 1270 2390
 NoConn ~ 1270 2490
+$Comp
+L power:GND #PWR0413
+U 1 1 5F063E56
+P 3260 4730
+F 0 "#PWR0413" H 3260 4480 50  0001 C CNN
+F 1 "GND" H 3260 4580 50  0000 C CNN
+F 2 "" H 3260 4730 50  0001 C CNN
+F 3 "" H 3260 4730 50  0001 C CNN
+	1    3260 4730
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0412
+U 1 1 5F063E50
+P 3260 4530
+F 0 "#PWR0412" H 3260 4380 50  0001 C CNN
+F 1 "+3.3V" H 3260 4670 50  0000 C CNN
+F 2 "" H 3260 4530 50  0001 C CNN
+F 3 "" H 3260 4530 50  0001 C CNN
+	1    3260 4530
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0411
+U 1 1 5F063E35
+P 3150 4090
+F 0 "#PWR0411" H 3150 3840 50  0001 C CNN
+F 1 "GND" H 3150 3940 50  0000 C CNN
+F 2 "" H 3150 4090 50  0001 C CNN
+F 3 "" H 3150 4090 50  0001 C CNN
+	1    3150 4090
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0410
+U 1 1 5F063E2F
+P 3150 3790
+F 0 "#PWR0410" H 3150 3640 50  0001 C CNN
+F 1 "+3.3V" H 3150 3930 50  0000 C CNN
+F 2 "" H 3150 3790 50  0001 C CNN
+F 3 "" H 3150 3790 50  0001 C CNN
+	1    3150 3790
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0414
+U 1 1 5F063E29
+P 3830 3910
+F 0 "#PWR0414" H 3830 3760 50  0001 C CNN
+F 1 "+3.3V" H 3830 4050 50  0000 C CNN
+F 2 "" H 3830 3910 50  0001 C CNN
+F 3 "" H 3830 3910 50  0001 C CNN
+	1    3830 3910
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom_Library:R_Custom R?
+U 1 1 5F063E23
+P 3830 4060
+AR Path="/5BAAE1F3/5F063E23" Ref="R?"  Part="1" 
+AR Path="/5BAAE1DC/5F063E23" Ref="R?"  Part="1" 
+AR Path="/5BAAE16C/5F063E23" Ref="R?"  Part="1" 
+AR Path="/5BB844FD/5F063E23" Ref="R?"  Part="1" 
+AR Path="/5BF346B3/5F063E23" Ref="R?"  Part="1" 
+AR Path="/5CAD2D97/5F063E23" Ref="R?"  Part="1" 
+AR Path="/5CB7A8BC/5F063E23" Ref="R?"  Part="1" 
+AR Path="/5E6AF016/5F063E23" Ref="R?"  Part="1" 
+AR Path="/5EAE4AE4/5F063E23" Ref="R?"  Part="1" 
+AR Path="/5EE61620/5F063E23" Ref="R?"  Part="1" 
+AR Path="/5EE2D42C/5F063E23" Ref="R406"  Part="1" 
+F 0 "R406" H 3770 4060 50  0000 R CNN
+F 1 "1k" V 3830 4060 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" H 3830 4060 50  0001 C CNN
+F 3 "" H 3830 4060 50  0001 C CNN
+F 4 "0402" H 3900 4140 50  0000 L CNN "display_footprint"
+F 5 "1%" H 3900 4060 50  0000 L CNN "Tolerance"
+F 6 "1/16W" H 3900 3990 50  0000 L CNN "Wattage"
+F 7 "541-1.00KLCT-ND" H 4130 4460 60  0001 C CNN "Digi-Key PN"
+	1    3830 4060
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3830 4630 3830 4510
+Wire Wire Line
+	3510 4630 3830 4630
+$Comp
+L Device:LED D?
+U 1 1 5F063E17
+P 3830 4360
+AR Path="/5BB844FD/5F063E17" Ref="D?"  Part="1" 
+AR Path="/5BF346B3/5F063E17" Ref="D?"  Part="1" 
+AR Path="/5BAAE1F3/5F063E17" Ref="D?"  Part="1" 
+AR Path="/5CAD2D97/5F063E17" Ref="D?"  Part="1" 
+AR Path="/5CB7A8BC/5F063E17" Ref="D?"  Part="1" 
+AR Path="/5E6AF016/5F063E17" Ref="D?"  Part="1" 
+AR Path="/5EAE4AE4/5F063E17" Ref="D?"  Part="1" 
+AR Path="/5EE61620/5F063E17" Ref="D?"  Part="1" 
+AR Path="/5EE2D42C/5F063E17" Ref="D401"  Part="1" 
+F 0 "D401" V 3869 4243 50  0000 R CNN
+F 1 "Green" V 3778 4243 50  0000 R CNN
+F 2 "LEDs:LED_0402" H 3830 4360 50  0001 C CNN
+F 3 "~" H 3830 4360 50  0001 C CNN
+F 4 "1497-1219-1-ND" H -1330 -1960 50  0001 C CNN "Digi-Key PN"
+	1    3830 4360
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Custom_Library:C_Custom C?
+U 1 1 5F063E10
+P 3150 3940
+AR Path="/5BAAE1F3/5F063E10" Ref="C?"  Part="1" 
+AR Path="/5BAAE1CB/5F063E10" Ref="C?"  Part="1" 
+AR Path="/5BE48F98/5F063E10" Ref="C?"  Part="1" 
+AR Path="/5CAD2D97/5F063E10" Ref="C?"  Part="1" 
+AR Path="/5CB7A8BC/5F063E10" Ref="C?"  Part="1" 
+AR Path="/5E6AF016/5F063E10" Ref="C?"  Part="1" 
+AR Path="/5EAE4AE4/5F063E10" Ref="C?"  Part="1" 
+AR Path="/5EE61620/5F063E10" Ref="C?"  Part="1" 
+AR Path="/5EE2D42C/5F063E10" Ref="C403"  Part="1" 
+F 0 "C403" H 3175 4040 50  0000 L CNN
+F 1 "0.1uF" H 3175 3840 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 3188 3790 50  0001 C CNN
+F 3 "" H 3175 4040 50  0001 C CNN
+F 4 "490-10701-1-ND" H 3575 4440 60  0001 C CNN "Digi-Key PN"
+F 5 "0402" H 3000 4040 50  0000 R CNN "display_footprint"
+F 6 "50V" H 3000 3940 50  0000 R CNN "Voltage"
+F 7 "X7R" H 3000 3840 50  0000 R CNN "Dielectric"
+	1    3150 3940
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Custom_Library:74LVC1G06_Power U?
+U 1 1 5F063E5D
+P 3260 4630
+AR Path="/5EAE4ADE/5F063E5D" Ref="U?"  Part="1" 
+AR Path="/5EAE4AE4/5F063E5D" Ref="U?"  Part="1" 
+AR Path="/5EE61620/5F063E5D" Ref="U?"  Part="1" 
+AR Path="/5EE2D42C/5F063E5D" Ref="U401"  Part="1" 
+F 0 "U401" H 3360 4780 50  0000 L CNN
+F 1 "74LVC1G06" H 3360 4530 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-353_SC-70-5" H 3260 4680 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1g06.pdf" H 3260 4630 50  0001 C CNN
+F 4 "296-8484-1-ND" H 3260 4630 50  0001 C CNN "Digi-Key PN"
+	1    3260 4630
+	1    0    0    -1  
+$EndComp
+Text GLabel 2960 4630 0    50   Input ~ 0
+ICSPDAT
 $EndSCHEMATC

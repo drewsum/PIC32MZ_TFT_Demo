@@ -1,13 +1,14 @@
 EESchema Schematic File Version 4
+LIBS:PIC32MZ_TFT_Demo-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 11
+Sheet 1 13
 Title ""
-Date ""
-Rev ""
-Comp ""
+Date "2020-07-04"
+Rev "A"
+Comp "Drew Maatman"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -55,8 +56,6 @@ U 5EE2D4BE
 F0 "USB UART Bridge" 50
 F1 "USB_UART_Bridge.sch" 50
 $EndSheet
-Text Notes 7710 4910 0    250  ~ 50
-Add Mechanical Sheet
 $Sheet
 S 2030 3910 500  150 
 U 5EE6161A
@@ -74,5 +73,17 @@ S 2030 4610 500  150
 U 5EE64D10
 F0 "TFT Screen" 50
 F1 "TFT_Screen.sch" 50
+$EndSheet
+$Sheet
+S 2030 4960 500  150 
+U 5EF9E990
+F0 "SPI Flash" 50
+F1 "SPI_Flash.sch" 50
+$EndSheet
+$Sheet
+S 2030 5310 500  150 
+U 5F00C3A2
+F0 "Mechanical" 50
+F1 "Mechanical.sch" 50
 $EndSheet
 $EndSCHEMATC
